@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(lsof -iTCP -sTCP:LISTEN -n -P)",
+      "Bash(curl -s -o /dev/null -w \"URL: %{url_effective}\\\\nHTTP: %{http_code}\\\\n\" \"https://patrick2008.github.io/patrickwebsite/\")",
+      "Bash(curl -s -o /dev/null -w \"URL: %{url_effective}\\\\nHTTP: %{http_code}\\\\n\" \"https://patrick2008.github.io/al-folio/\")",
+      "Bash(curl -s -o /dev/null -w \"URL: %{url_effective}\\\\nHTTP: %{http_code}\\\\n\" \"https://patrick2008.github.io/\")",
+      "Bash(curl -s \"https://patrick2008.github.io/patrickwebsite/\")"
+    ]
+  }
+}
