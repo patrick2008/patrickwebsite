@@ -1,12 +1,31 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+description: 
 ---
+
+<div class="text-center mb-3">
+  <a
+    href="{{ '/assets/rendercv/Resume.pdf' | relative_url }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-outline-primary btn-sm"
+  >
+    <i class="fa-solid fa-file-pdf"></i> Download PDF
+  </a>
+</div>
+
+<div class="embed-responsive" style="height: 100vh;">
+  <iframe
+    src="{{ '/assets/rendercv/Resume.pdf' | relative_url }}"
+    width="100%"
+    height="100%"
+    style="border: 1px solid var(--global-divider-color, #ddd); border-radius: 4px;"
+  >
+    Your browser doesn't support embedded PDFs.
+    <a href="{{ '/assets/rendercv/Resume.pdf' | relative_url }}">Download the PDF instead.</a>
+  </iframe>
+</div>
